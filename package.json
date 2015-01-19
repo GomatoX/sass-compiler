@@ -4,7 +4,7 @@
   "version": "0.1.0",
   "description": "SASS Compiler based on node-sass library that provides binding for Node.js to libsass. Works only with scss syntax. ",
 
-  "repository": "https://github.com/atom/sass-compiler",
+  "repository": "https://github.com/GomatoX/sass-compiler",
   "license": "MIT",
   "engines": {
     "atom": ">=0.170.0"
