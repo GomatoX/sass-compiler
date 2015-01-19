@@ -7,7 +7,7 @@
   "repository": "https://github.com/atom/sass-compiler",
   "license": "MIT",
   "engines": {
-    "atom": ">0.50.0"
+    "atom": ">=0.170.0"
   },
   "dependencies": {}
 }
