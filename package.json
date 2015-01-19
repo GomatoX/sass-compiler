@@ -1,0 +1,13 @@
+{
+  "name": "sass-compiler",
+  "main": "./lib/sass-compiler",
+  "version": "0.1.0",
+  "description": "SASS Compiler based on node-sass library that provides binding for Node.js to libsass. Works only with scss syntax. ",
+
+  "repository": "https://github.com/atom/sass-compiler",
+  "license": "MIT",
+  "engines": {
+    "atom": ">0.50.0"
+  },
+  "dependencies": {}
+}
