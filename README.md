@@ -7,8 +7,8 @@ Sass Compiler based on node-sass library that provides binding for Node.js to li
 
 ## Modes
 Available two compiling file detection modes:
-1. Base path is editor project.
-2. Tries to extract current path from editable file. It will check if **inputPath** value are in editable file path, and it will be reference point for compiling `Scss` file. Aslo it could be specified based on reference point with **outputPathExtracted**.
+* Base path is editor project.
+* Tries to extract current path from editable file. It will check if **inputPath** value are in editable file path, and it will be reference point for compiling `Scss` file. Aslo it could be specified based on reference point with **outputPathExtracted**.
 
 ## Settings
 | Parameter           	| Description                                    	|
