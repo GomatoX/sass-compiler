@@ -1,6 +1,6 @@
-# SASS Compiler for ATOM editor
+# Sass Compiler for ATOM editor
 
-SASS Compiler based on node-sass library that provides binding for Node.js to libsass. Works only with scss syntax.
+Sass Compiler based on node-sass library that provides binding for Node.js to libsass. Works only with scss syntax.
 
 ## Dependencies
 * node.js
