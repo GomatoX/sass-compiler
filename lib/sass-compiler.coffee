@@ -3,23 +3,17 @@ Compiler = require './compiler'
 module.exports = SassCompiler =
 
     config:
-        inputPath:
-            title: 'Input path'
-            description: 'Specifies where the Scss files are stored. ( Path relative to your project ).'
+        inputFilePath:
+            title: 'Input File Path'
+            description: 'Where the scss file is exemple: "./frontend/app/css/main.scss"'
             type: 'string'
-            default: './css/sass/'
+            default: ''
 
-        outputPath:
-            title: 'Output path'
-            description: 'This specifies where the CSS will be saved. ( Path relative to your project ).'
+        outputFilePath:
+            title: 'Output File Path'
+            description: 'Where you want your css file is generated: "./frontend/app/css/main.css"'
             type: 'string'
-            default: './css/'
-
-        fileName:
-            title: 'File name'
-            description: 'Scss type file name, to be parent of all @include.'
-            type: 'string'
-            default: 'main'
+            default: ''
 
         outputStyle:
             title: 'Output style'
@@ -29,29 +23,16 @@ module.exports = SassCompiler =
             enum: [ 'nested', 'compressed' ]
 
         successMsg:
-            title: 'Eneable/disable success message.'
-            description: 'Turns on/off information about successfull compiling.'
+            title: 'Enable/disable success message.'
+            description: 'Turns on/off information about successful compiling.'
             type: 'boolean'
             default: true
 
-        extractPath:
-            title: 'Get path from file.'
-            description: 'Eneable/disable ( package tries to extract current path based on editable file and sets reference point ).'
+        sourceMap:
+            title: 'Generate source map.'
+            description: 'Enable/disable auto-generated source map (generated.css.map).'
             type: 'boolean'
             default: false
-
-        inputPathExtracted:
-            title: 'Catalog where scss are stored.'
-            description: 'Specifies where your Scss files are stored. ( Relative to extracted reference point ).'
-            type: 'string'
-            default: 'sass'
-
-        outputPathExtracted:
-            title: 'Catalog for saving compiled css.'
-            description: 'Specifies where the CSS will be saved. ( Relative to extracted reference point ).'
-            type: 'string'
-            default: '../css'
-
 
     activate: (state) ->
         @compiler = new Compiler()
