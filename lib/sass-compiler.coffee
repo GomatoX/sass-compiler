@@ -26,7 +26,7 @@ module.exports = SassCompiler =
             description: 'String to determine how the final CSS should be rendered. Its value should be one of nested or compressed.'
             type: 'string'
             default: 'compressed'
-            enum: [ 'nested', 'compressed' ]
+            enum: [ 'nested', 'expanded', 'compact', 'compressed' ]
 
         successMsg:
             title: 'Eneable/disable success message.'
